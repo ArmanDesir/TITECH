@@ -1,0 +1,28 @@
+var overtap = document.querySelector('.overtop');
+
+setTimeout(function () {
+    var loader = document.getElementById('loader');
+    loader.classList.add('hidden');
+    overtap.classList.add('oberhid');
+  }, 4000);
+
+
+  var checkbox = document.querySelector('.ui-switch input[type="checkbox"]');
+
+let bd = document.body;
+
+function change(){
+
+
+    if(checkbox.checked){
+        
+        bd.classList.add('bdnew');
+        
+    }else{
+        bd.classList.remove('bdnew');
+
+    }
+
+
+
+}
